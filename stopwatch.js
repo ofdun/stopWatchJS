@@ -3,9 +3,9 @@ window.onload = function () {
     var stopButton = document.getElementById("stop")
     var resetButton = document.getElementById("reset")
 
-    var seconds = document.getElementById("secs")
+    var secondsHTML = document.getElementById("secs")
     var secs = 0
-    var micros = document.getElementById("mics")
+    var micsHTML = document.getElementById("mics")
     var mics = 0
     var Interval
 
@@ -27,18 +27,18 @@ window.onload = function () {
             stopTimer()
             secs = 0
             mics = 0
-            seconds.innerHTML = "00"
-            micros.innerHTML = "00"
+            secondsHTML.innerHTML = "00"
+            micsHTML.innerHTML = "00"
         }
     }
 
     function startTimer() {
         mics++
-        if (secs < 10) { seconds.innerHTML = "0" + secs }
-        else { seconds.innerHTML = secs }
+        if (secs < 10) { secondsHTML.innerHTML = "0" + secs }
+        else { secondsHTML.innerHTML = secs }
 
-        if (mics < 10) { micros.innerHTML = "0" + mics }
-        else { micros.innerHTML = mics }
+        if (mics < 10) { micsHTML.innerHTML = "0" + mics }
+        else { micsHTML.innerHTML = mics }
 
         if (mics >= 99) { secs++; mics = -1 }
 
