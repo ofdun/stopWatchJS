@@ -1,9 +1,10 @@
 body,
 html {
     height: 100%;
-    background-color: bisque;
+    background-color: rgb(41, 40, 40);
     overflow: hidden;
     text-align: center;
+    font-family: sans-serif;
 }
 
 #title {
@@ -11,45 +12,35 @@ html {
     margin: auto;
     width: 50%;
     margin-top: 2vh;
-    font-size: 8vw;
+    font-size: 6vw;
 }
 
 #timer {
     color: cadetblue;
-    /*margin: auto;
-    margin-top: 15vh;*/
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    font-size: 8vw;
-}
-
-#buttons {
-    border-radius: 10px;
-}
-
-#test {
-    position: relative;
+    font-size: 6vw;
 }
 
 #start,
 #stop,
 #reset {
+    font-family: sans-serif;
+    color: white;
     border-radius: 10px;
-    border-width: 10px;
-    background-color: cornsilk;
-    border-color: cornsilk;
+    border-width: 3px;
+    font-size: 150%;
+    background-color: cadetblue;
+    border-color: cadetblue;
     inline-size: 20vw;
     height: 60px;
     position: absolute;
-    /*margin: auto;
-    margin-inline: 5vw;*/
     bottom: 10%;
 }
 
 #start {
-
     left: 10vw;
 }
 
